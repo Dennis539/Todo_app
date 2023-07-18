@@ -1,0 +1,113 @@
+h3{
+    margin: 20px;
+    top: 5px;
+    color: white;
+}
+
+.todo--item{
+    /* display:inline-block;  */
+    display: flex;
+    width: 440px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+.todo--form{
+    background-color: black;
+    width: 460px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height:150px;
+}
+
+.todo--update--delete{
+    margin: 3px;
+    width: 170px;
+    display: flex;
+    left: 50px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.todo--update{
+    width: 70px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 7px;
+} 
+
+.todo--delete{
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 7px;
+}
+
+.todo--title--div{
+    margin: 10px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.todo--title{
+    vertical-align: middle;
+}
+
+.button {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 3px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    height: 20px;
+}
+
+.todo--input {
+    width: 500px;
+    top: 100px;
+    left: 400px;
+    background-color: gray;
+    display:inline-block;
+    position: absolute;
+}
+
+/* .todo--ToDoList{
+    background-color: azure;
+    margin: 20px;
+} */
+
+.todo--completedList {
+    background-color: purple;
+    width: 200px;
+    top: 100px;
+    float: right;
+    margin-left: 20px;
+    right: 300px;
+    position: absolute;
+}
+
+.todo--deletedList {
+    background-color: yellow;
+    float: right;
+    top: 100px;
+    right: 50px;
+    width: 200px;
+    position: absolute;
+}
+
+.form--input{
+    margin: 20px;
+}
+
+.todo--deletedListItem{
+    display: flex;
+}
+
