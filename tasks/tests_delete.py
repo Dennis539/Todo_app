@@ -1,7 +1,5 @@
 from django.test import TestCase
 from .models import Task
-from rest_framework.test import APITestCase
-from rest_framework import status
 from django.urls import reverse
 
 # Create your tests here.

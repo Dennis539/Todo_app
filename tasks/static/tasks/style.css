@@ -1,3 +1,5 @@
+body {background-color: rgba(0, 0, 0, 0.719)}
+
 h3{
     margin: 20px;
     top: 5px;
@@ -18,9 +20,7 @@ h3{
 .todo--form{
     background-color: black;
     width: 460px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 20px;
     height:150px;
 }
 
@@ -85,7 +85,7 @@ h3{
 } */
 
 .todo--completedList {
-    background-color: purple;
+    background-color: darkgray;
     width: 200px;
     top: 100px;
     float: right;
@@ -95,7 +95,7 @@ h3{
 }
 
 .todo--deletedList {
-    background-color: yellow;
+    background-color: darkgray;
     float: right;
     top: 100px;
     right: 50px;
@@ -109,5 +109,7 @@ h3{
 
 .todo--deletedListItem{
     display: flex;
+    background-color: lightgray;
+    margin: 10px;
 }
 

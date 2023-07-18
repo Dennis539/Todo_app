@@ -2,7 +2,10 @@ from django.shortcuts import render, redirect
 from .models import Task, DeletedTask
 from .forms import taskForm
 
-
+"""
+This part of the app renders the homepage while it also takes care 
+of the functionality of adding new tasks when a post is made. 
+"""
 def index(request):
     tasks = Task.objects.all()
     form = taskForm()
@@ -22,7 +25,14 @@ def index(request):
     context = {"tasks": tasks, "form": form, "deleteTask": deleteTask}
     return render(request, 'tasks/home.html', context)
 
+"""
+This function takes care of the update functionality of a task. If the update button is clicked,
+this function will be activated, causing the user to redirect to another page where the updating
+can be done. 
 
+Improvement point: updated tasks now show up in both the todo part and the completed part. Have
+not thought of a way on how solve this. 
+"""
 def update(request, pk):
     # This part uses the pk to grab the specific item which needs to be updated. 
     task = Task.objects.get(id=pk)
@@ -39,7 +49,10 @@ def update(request, pk):
     context = {'form': form}
     return render(request, 'tasks/update.html', context)
 
-
+"""
+Takes care of deleting a task. When the delete button is clicked, the task will 
+immediately be removed and displayed in the list of deleted tasks. 
+"""
 def delete(request, pk):
     task = Task.objects.get(id=pk)
     form = taskForm(instance=task)
