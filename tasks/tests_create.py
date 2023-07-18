@@ -23,6 +23,8 @@ class IndexTestCase(TestCase):
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200) #Just asserts whether the get method was successful. 
 
+        # Here, a response in recreated after which it is checked whether the data contains the same data 
+        # as in the database. 
         response_elements = response.context['tasks']
         self.assertQuerysetEqual(response_elements.get(title="Work on plan for world domination").title, world_domination.title)
 
